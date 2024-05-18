@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SICI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1" >
+    <meta name="keywords" content="chatbot, cybersecurity, technology">
+    <script src="js/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/aldo.css">
+    <link rel="stylesheet" href="css/aller.css">
+    <link rel="stylesheet" href="css/rest.css">
+</head>
+
+<body> 
+    <header>
+       <h1>
+           <a href="index.html"><figure><img src="img/sici.png" alt=""></figure>
+           </a>
+           <a href="index.html">SICI</a>
+       </h1>
+       
+        <nav class="ioMenu">
+            <figure id="showMenu" class="ioMenuMovil" onClick="displayMenu()"><img src="img/menu.png" alt=""></figure>
+            <div id="card_menu">
+                <figure id="hideMenu" class="ioMenuMovil" onClick="displayMenu()"><img src="img/exit.png" alt=""></figure>
+                <figure id="logo_menu"><img src="img/sici2.png" alt=""></figure>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="login.html">Log-In</a></li>
+                    <li><a href="aboutus.html"> About us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a onClick="displayFormContact('block')" href="#">Contact us</a></li>
+                </ul>
+            </div> 
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="info">
+            <strong>The adoption of smart cities is on the rise, increasing the potentially vulnerable attack surface area for cybersecurity threats. Latin America is rapidly becoming one of the biggest consumers of the smart city model. We have identified that there is a gap in the Latin American market- cybersecurity concerns are not being sufficiently addressed thus putting residents at risk. <u>Our cybersecurity chatbot (SICI): Solución Innovadora para Ciudades Inteligentes/Innovative Solution for Smart Cities</u>, is a potential solution to vulnerability that will empower smart city residents with information about cybersecurity threats. By using existing machine learning techniques and platforms, our product’s main functionality would seek to inform users of: (i) security threats to their accounts; (ii) major cybersecurity attacks that may impact them; and (iii) provide answers to questions regarding cybersecurity. We believe that our chatbot is an innovative step forward towards the development of effective responses to assist in preventing, identifying, and responding to cyber threats as they affect smart city residents.</strong></div>
+        <div class="image"><img src="img/smartcities.jpg"></div>
+    </div>
+
+    <div id="contact_form">
+        <form action="contact.php" id="form1" name="form1" method="post">
+            <div id="close_form" onClick="displayFormContact('none')"></div>
+            <figure id="logo_mensaje"><img src="iconos/icon-17.png" alt=""></figure>
+            <p>Say Hello!!!</p>
+            <input type="text" id="name" name="name" placeholder="Name"/>
+            <input type="text" id="email" name="email" placeholder="Email"/>
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <input type= "submit" name="Submit" id="button" value="Submit"/>
+        </form>
+    </div>
+    <div id="contact_button"></div>
+    
+    <footer>
+    <div class="rrss">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+    <p> © 2018 All rights reserved | Privacy Policy </p>
+    </footer>
+
+    <script>
+            function displayFormContact(status){
+            var form=document.getElementById("contact_form")
+            form.style.display=status;
+        }
+
+            function displayMenu(){
+            var display;
+            var card_menu=document.getElementById("card_menu");
+            display=card_menu.style.display;
+
+            if (display=="none"){
+                card_menu.style.display="block";
+            }
+            else{
+                card_menu.style.display="none";
+            }
+        }
+          document.getElementsByTagName("header")[0].style.background = "#29abe2";
+                    
+    </script>
+
+</body>
+</html>
